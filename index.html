@@ -9,21 +9,224 @@
     <link rel="stylesheet" href="styles/responsive.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header class="header">
-      <nav class="nav">
-        <!-- Logo y navegación -->
-      </nav>
-    </header>
+    <div class="app-container">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-content">
+          <h1 class="app-title">Workout Schedule</h1>
+          <p class="app-subtitle">Plan and manage your training sessions</p>
+        </div>
+      </header>
 
-    <!-- Main Content -->
-    <main class="main">
-      <!-- Contenido principal según prototipo -->
-    </main>
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Month Navigation -->
+        <section class="month-section">
+          <div class="month-header">
+            <h2>January 2024</h2>
+            <div class="view-controls">
+              <button class="view-btn active">Week View</button>
+              <button class="view-btn">Day View</button>
+            </div>
+          </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <!-- Información del footer -->
-    </footer>
+          <!-- Calendar Grid -->
+          <div class="calendar-container">
+            <div class="calendar-grid">
+              <!-- Week Days Header -->
+              <div class="calendar-header">
+                <div class="day-header">Sun</div>
+                <div class="day-header">Mon</div>
+                <div class="day-header">Tue</div>
+                <div class="day-header">Wed</div>
+                <div class="day-header">Thu</div>
+                <div class="day-header">Fri</div>
+                <div class="day-header">Sat</div>
+              </div>
+
+              <!-- Week 1 -->
+              <div class="calendar-week">
+                <div class="calendar-day">
+                  <div class="day-number">31</div>
+                  <div class="workout-slot"></div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">1</div>
+                  <div class="workout-slot workout-upper">Upper Body</div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">2</div>
+                  <div class="workout-slot"></div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">3</div>
+                  <div class="workout-slot workout-grade">Grade</div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">4</div>
+                  <div class="workout-slot"></div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">5</div>
+                  <div class="workout-slot workout-log">Log Day</div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">6</div>
+                  <div class="workout-slot"></div>
+                </div>
+              </div>
+
+              <!-- Week 2 -->
+              <div class="calendar-week">
+                <div class="calendar-day">
+                  <div class="day-number">7</div>
+                  <div class="workout-slot"></div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">8</div>
+                  <div class="workout-slot workout-upper">Upper Body</div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">9</div>
+                  <div class="workout-slot"></div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">10</div>
+                  <div class="workout-slot workout-imt">IMT</div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">11</div>
+                  <div class="workout-slot"></div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">12</div>
+                  <div class="workout-slot workout-log">Log Day</div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">13</div>
+                  <div class="workout-slot"></div>
+                </div>
+              </div>
+
+              <!-- Week 3 (Current Week) -->
+              <div class="calendar-week current-week">
+                <div class="calendar-day">
+                  <div class="day-number">14</div>
+                  <div class="workout-slot"></div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">15</div>
+                  <div class="workout-slot workout-upper">Upper Body</div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">16</div>
+                  <div class="workout-slot"></div>
+                </div>
+                <div class="calendar-day current-day">
+                  <div class="day-number">17</div>
+                  <div class="day-badge">Today</div>
+                  <div class="workout-slot workout-upper current-workout">
+                    Upper Body
+                  </div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">18</div>
+                  <div class="workout-slot"></div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">19</div>
+                  <div class="workout-slot workout-log">Log Day</div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">20</div>
+                  <div class="workout-slot"></div>
+                </div>
+              </div>
+
+              <!-- Week 4 -->
+              <div class="calendar-week">
+                <div class="calendar-day">
+                  <div class="day-number">21</div>
+                  <div class="workout-slot"></div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">22</div>
+                  <div class="workout-slot"></div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">23</div>
+                  <div class="workout-slot"></div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">24</div>
+                  <div class="workout-slot"></div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">25</div>
+                  <div class="workout-slot"></div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">26</div>
+                  <div class="workout-slot"></div>
+                </div>
+                <div class="calendar-day">
+                  <div class="day-number">27</div>
+                  <div class="workout-slot"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Upcoming Workouts Sidebar -->
+        <aside class="workout-sidebar">
+          <div class="sidebar-section">
+            <h3>Upcoming Workouts</h3>
+
+            <div class="workout-card">
+              <div class="workout-info">
+                <h4 class="workout-title">Upper Body Strength</h4>
+                <p class="workout-time">Today, 6:00 PM</p>
+              </div>
+            </div>
+
+            <div class="workout-card">
+              <div class="workout-info">
+                <h4 class="workout-title">Cardio Session</h4>
+                <p class="workout-time">Tomorrow, 7:00 AM</p>
+              </div>
+            </div>
+
+            <div class="workout-card">
+              <div class="workout-info">
+                <h4 class="workout-title">Log Day Power</h4>
+                <p class="workout-time">Friday, 5:30 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Schedule Workout Button -->
+          <div class="schedule-section">
+            <button class="schedule-btn">
+              <span class="btn-icon">+</span>
+              Schedule Workout
+            </button>
+          </div>
+
+          <!-- Start View Section -->
+          <div class="start-view-section">
+            <h3>Start View</h3>
+            <div class="view-options">
+              <div class="view-option">
+                <strong>Backedside</strong>
+              </div>
+              <div class="view-option">
+                <strong>Reachedside</strong>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </main>
+    </div>
   </body>
 </html>

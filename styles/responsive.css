@@ -1,0 +1,75 @@
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .main-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .workout-sidebar {
+    order: -1;
+  }
+
+  .month-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 15px;
+  }
+
+  .app-title {
+    font-size: 2rem;
+  }
+
+  .calendar-week {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .calendar-day {
+    min-height: auto;
+    padding: 15px;
+  }
+
+  .day-header {
+    display: none;
+  }
+
+  .view-controls {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .view-btn {
+    flex: 1;
+    text-align: center;
+  }
+
+  .workout-sidebar {
+    gap: 20px;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .app-title {
+    font-size: 1.8rem;
+  }
+
+  .month-section {
+    padding: 15px;
+  }
+
+  .sidebar-section {
+    padding: 15px;
+  }
+
+  .workout-card {
+    padding: 12px;
+  }
+}

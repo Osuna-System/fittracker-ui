@@ -1,13 +1,21 @@
-/* Reset y variables CSS */
+/* Reset y Variables CSS */
 :root {
   --primary-color: #007bff;
+  --primary-dark: #0056b3;
   --secondary-color: #6c757d;
   --success-color: #28a745;
-  --danger-color: #dc3545;
   --warning-color: #ffc107;
+  --danger-color: #dc3545;
   --light-color: #f8f9fa;
   --dark-color: #343a40;
-  --font-main: "Arial", sans-serif;
+  --gray-light: #e9ecef;
+  --gray-medium: #adb5bd;
+  --white: #ffffff;
+
+  --font-main: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --border-radius: 8px;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
 }
 
 * {
@@ -20,4 +28,83 @@ body {
   font-family: var(--font-main);
   line-height: 1.6;
   color: var(--dark-color);
+  background-color: var(--light-color);
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+.header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.app-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  margin-bottom: 8px;
+}
+
+.app-subtitle {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  font-weight: 400;
+}
+
+/* Main Content Layout */
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 30px;
+  align-items: start;
+}
+
+/* Month Section */
+.month-section {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 25px;
+  box-shadow: var(--shadow);
+}
+
+.month-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--gray-light);
+}
+
+.month-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.view-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.view-btn {
+  padding: 8px 16px;
+  border: 2px solid var(--gray-light);
+  background: var(--white);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.view-btn.active,
+.view-btn:hover {
+  background: var(--primary-color);
+  color: var(--white);
+  border-color: var(--primary-color);
 }
